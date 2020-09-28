@@ -1,0 +1,187 @@
+body{
+  font-family: 'Montserrat';
+  text-align: center;
+  /* Since text-align: center; has been declared pretty common (in each section), we can just make it website wide */
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+/*
+h2{
+  font-size: 2.5rem;
+  line-height: 1.5;
+} */
+
+
+p{
+  color: #afafaf;
+  font-family: 'Montserrat-Light';
+}
+
+/* Container */
+
+.container-fluid{
+  /* Although bootstrap already has some pre-added styles to this, we will make it a bit more personalsed */
+  /* We set all elements with the property of padding: 7% 15%; inside the container-fluid and put them around all areas where we have this particular padding style specified */
+  /* Then we can delete the rest repetition parts of  padding: 7% 15%;*/
+  padding: 7% 15%;
+}
+
+/* Title Section */
+#title{
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+#title .container-fluid{
+  padding: 3% 15% 7%;
+}
+
+/* Heading Section */
+.big-heading{
+  font-weight: 200;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* feature Srction */
+#features{
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.feature-title{
+  font-size: 1.5rem;
+}
+
+
+/* Navbar Bar */
+nav{
+  padding: 0 0 4.5rem;
+}
+/* We can also use .navbar{} to target the whole navbar class and change the padding*/
+
+.navbar-brand{
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: 'Montserrat-Light'
+}
+
+/* Download Buttons */
+
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.title-image{
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+  /* top: 150px; */
+}
+/* feature */
+/* Remember --> padding is the most important part to do first for change how the texts and imgs display.
+   It will turn the chaoticness into more tidiness*/
+/* Remember it form of HTML is a box module */
+
+.feature-box{
+  padding: 5%;
+}
+/* It is always ideal to find a custom classes when you are trying to style it inside css
+  , unless you are just trying to customised some feature of fontawesome, boostsrap */
+/* It is not good either to use 'fas' as the class name since it will be applying the same style to future fontawesome symbole as well */
+.icon{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover{
+  color: #ff4c68;
+}
+
+/* Testimonials */
+/* Remember --> padding is the most important part to do first for change how the texts and imgs display.
+   It will turn the chaoticness into more tidiness*/
+/* Also it is nice to use background-color to separate different setions of website */
+#testimonials{
+  background-color: #ef8172;
+  color: #fff;
+}
+.testimonial-image{
+  width: 20%;
+  border-radius:100%;
+  margin: 20px;
+}
+.textimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* We can apply padding to the part that we can want to be padded */
+/* We can apply the padding to each carousel-item so that carousel-items are padded.
+Then the <h2> <img> <em> are bunched in the center but have the buttons outside of the padding so that they have more spcae and visible*/
+
+
+/* Press */
+#press{
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing{
+  padding: 5%;
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* Media Query */
+@media (max-width:1028px){
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+    position: static;
+    transform: rotate(0);
+    /* rotate back to 0 deg */
+  }
+}
+
+/* Call to Action */
+#cta{
+  background-color: #ef8172;
+  color: #fff;
+}
+
+/* Footer Section */
+#footer{
+  margin: 0 10%;
+}
+.footer-icon{
+  margin: 20px 10px;
+}
